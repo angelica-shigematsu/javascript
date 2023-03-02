@@ -1,0 +1,13 @@
+import { CadastroComponent } from "./controller/cadastro.js";
+
+const link = document.getElementById('link');
+
+link.addEventListener('click', (event) => {
+   const option = event.target.childNodes[0].data
+
+  switch (option) {
+    case "Cadastro": 
+      CadastroComponent();
+      break;
+  }
+})
