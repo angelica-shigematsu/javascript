@@ -1,6 +1,6 @@
 import express from 'express';
 import { addCheckin, 
-          createActivities, 
+          addCheckout, 
           listActivivities, 
           removeActivity } 
           from './controllers/activitiesController.js';
@@ -36,9 +36,9 @@ app.delete('/api/vehicles/:id', removeVehicle);
 
 app.get('/api/activities', listActivivities);
   
-app.post('/api/activities/:id', createActivities);
+app.post('/api/activities/:id', addCheckin);
 
-app.put('/api/activies/:id', addCheckin);
+app.put('/api/activities/:id', addCheckout);
 
 app.delete('/api/activities/:id', removeActivity);
 

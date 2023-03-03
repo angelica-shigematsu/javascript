@@ -1,3 +1,5 @@
+import { openDatabase } from "../database";
+
 export const listActivivities = async ( request, response ) => {
   const db = await openDatabase();
   const vehicle = await db.all(`
@@ -7,7 +9,7 @@ export const listActivivities = async ( request, response ) => {
     response.send(vehicle);
 }
 
-export const createActivities = async (request, response) => {
+export const addCheckin = async (request, response) => {
   const { id } = request.params;
   const checkin_at = new Date().getTime();
   const db = await openDatabase();
@@ -32,7 +34,7 @@ export const createActivities = async (request, response) => {
   response.send('Veículo não cadastrado no sisitema');
 }
 
-export const addCheckin = async( request, response) => {
+export const addCheckout = async( request, response) => {
   const { id } = request.params;
   const db = await openDatabase();
   let price = 0;
@@ -60,17 +62,18 @@ export const addCheckin = async( request, response) => {
        WHERE id= ?
     `,[typeVehicle.price_id]);
 
-
     const diferencaHoras = (checkout_at - checkin_at)/ (1000 * 60 * 60);
 
-    price = diferencaHoras * prices.price;
+   
+    price = (diferencaHoras * prices.price).toFixed(2);
 
+    console.log(price);
     const activities = await db.run(`
     UPDATE activities
       SET checkout_at = ?,
       price = ?
-    WHERE vehicle_id = ?
-  `, [checkout_at, price, vehicleId]);
+    WHERE id = ?
+  `, [checkout_at, price, id]);
     db.close();
     response.send(activities)
     return;
