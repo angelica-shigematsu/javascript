@@ -23,7 +23,7 @@ export const createVehicle = async (request, response) => {
 
 export const alterVehicle = async (request, response) => {
   const { model, label, observation, type, owner } = request.body;
-  const { id } = request.body;
+  const { id } = request.params;
   const db = await openDatabase();
   let data = null;
   const vehicle = await db.get(`
