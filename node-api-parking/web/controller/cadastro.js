@@ -1,11 +1,9 @@
 import { service } from "../service/index.js";
 import { view } from "../view/index.js";
 
-const formulario = document.getElementById("formulario");
-
 export const CadastroComponent = () => {
   view.getCadastro();
-  if (formulario) {
+  const formulario = document.getElementById("formulario");
   formulario.addEventListener('submit', function(event) {
     event.preventDefault();
     const model = document.getElementById("modelo").value;
@@ -22,6 +20,5 @@ export const CadastroComponent = () => {
         owner 
       }
       service.postVeiculo(cadastroCliente);
-    });
-  }
+  });
 }

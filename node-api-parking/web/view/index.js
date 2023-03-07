@@ -86,5 +86,6 @@ const getAtualizaHtml = () => {
 export const view = {
   getAtualizaHtml,
   getCadastro,
-  getListaClientesHtml
+  getListaClientesHtml,
+  getAtualizaHtml
 }
