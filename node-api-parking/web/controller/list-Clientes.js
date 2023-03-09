@@ -46,7 +46,7 @@ const criarNovaLinha = (id, cliente, modelo, placa, tipo, observacoes) => {
     <div class="lista-btn">
       <a id="${id}" class="btn-link editar">Editar</a>
       <a id="${id}" class="btn-link" type="button">Excluir</a>
-
+    </div>
   </td>
   `
   NovaLinha.innerHTML = dadosHtml;

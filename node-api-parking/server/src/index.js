@@ -36,9 +36,9 @@ app.delete('/api/vehicles/:id', removeVehicle);
 
 app.get('/api/activities', listActivivities);
   
-app.post('/api/activities/:id', addCheckin);
+app.post('/api/checkin', addCheckin);
 
-app.put('/api/activities/:id', addCheckout);
+app.put('/api/checkout/:id', addCheckout);
 
 app.delete('/api/activities/:id', removeActivity);
 

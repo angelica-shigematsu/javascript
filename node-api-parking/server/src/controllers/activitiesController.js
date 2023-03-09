@@ -10,28 +10,33 @@ export const listActivivities = async ( request, response ) => {
 }
 
 export const addCheckin = async (request, response) => {
-  const { id } = request.params;
-  const checkin_at = new Date().getTime();
+  const { label } = request.body;
+
   const db = await openDatabase();
 
-  const vehicle = await db.all(`
+  const vehicle = await db.get(`
     SELECT * FROM vehicles 
-        WHERE id = ?
-  `, [id]);
+        WHERE label = ?
+  `, [label]);
 
   if (vehicle) {
-
+    const checkin_at = (new Date()).getTime();
     await db.run(`
       INSERT INTO activities (checkin_at, vehicle_id)
       VALUES(?, ?)
-      `, [checkin_at, id]
+      `, [checkin_at, vehicle.id]
     );
     db.close();
-    response.send('Veículo registrado com sucesso');
+    response.send({
+      vehicle_id: vehicle.id,
+      checkin_at: checkin_at,
+      message: `Veículo [${vehicle.label}] entrou no estacionamento`
+    })
     return;
   }
 
-  response.send('Veículo não cadastrado no sisitema');
+  response.send('Veículo não cadastrado no sistema');
+  return
 }
 
 export const addCheckout = async( request, response) => {
