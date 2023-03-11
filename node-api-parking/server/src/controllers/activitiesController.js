@@ -40,48 +40,34 @@ export const addCheckin = async (request, response) => {
 }
 
 export const addCheckout = async( request, response) => {
-  const { id } = request.params;
+  const { label, price } = request.body;
   const db = await openDatabase();
-  let price = 0;
 
   const checkout_at = new Date().getTime();
-  const activities = await db.get(`
-    SELECT * FROM activities WHERE id = ?
-  `,[id]);
   
-  const vehicleId = activities.vehicle_id;
-  const checkin_at = activities.checkin_at;
+  const vehicle = await db.get(`
+      SELECT * FROM vehicles 
+        WHERE label = ?
+    `,[label]);
 
-  if (activities) {
-    const vehicle = await db.get(`
-      SELECT * FROM vehicles WHERE id = ?
-    `,[vehicleId]);
+  if (vehicle) {
+    const activityOpen = await db.get(`
+      SELECT *
+        FROM activities
+        WHERE vehicle_id = ? 
+    `, [vehicle.id]);
 
-    const typeVehicle = await db.get(`
-      SELECT * FROM vehicles_types
-       WHERE id= ?
-    `,[vehicle.type]);
-
-    const prices = await db.get(`
-      SELECT * FROM prices
-       WHERE id= ?
-    `,[typeVehicle.price_id]);
-
-    const diferencaHoras = (checkout_at - checkin_at)/ (1000 * 60 * 60);
-
-   
-    price = (diferencaHoras * prices.price).toFixed(2);
-
-    console.log(price);
+  if(activityOpen) {
     const activities = await db.run(`
     UPDATE activities
       SET checkout_at = ?,
       price = ?
     WHERE id = ?
-  `, [checkout_at, price, id]);
+  `, [checkout_at, price, activityOpen.id]);
     db.close();
     response.send(activities)
     return;
+    }
   }
   response.send("O checkin não foi feito");
   return;

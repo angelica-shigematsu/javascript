@@ -2,7 +2,15 @@ import { service } from "../service/index.js";
 import { ListaClienteComponent } from "./list-Clientes.js";
 
 export const AtualizaComponent = (idParametro) => {
-
+  const label = []
+  service.getVeiculo().then(dados => {
+    dados.forEach(element => {
+      if (element.label != null) {
+        label.push(element.label);
+      }
+    })
+  })
+  
   service.getVeiculo().then(dados => {
     dados.forEach(element => {
       if (element.id == idParametro) {
@@ -27,10 +35,15 @@ export const AtualizaComponent = (idParametro) => {
         type,
         owner 
       }
-      service.putVeiculo(atualizaCliente, idParametro).then(() => {
-        cancelar();
-        ListaClienteComponent();
-      });
+
+      if (label.includes(atualizaCliente.label)) {
+        return alert(`Já existe essa placa: ${atualizaCliente.label}`);
+      } else {
+        service.putVeiculo(atualizaCliente, idParametro).then(() => {
+          cancelar();
+          ListaClienteComponent();
+        });
+      }
   });
 
 }

@@ -99,10 +99,51 @@ const getCheckinHtml = () => {
     <div>
       <label>Placa</label>
       <select name="input" id="select"></select>
-      <a href="button" id="adicionar-novo">Adicionar Novo</a>
+      <a id="adicionar-novo">Adicionar Novo</a>
       </br>
       <div class="btn">
         <button id="checkin" class="btn-link">Checkin</button>
+      </div>
+    </div>
+  </section>
+`;
+  main.innerHTML = dadosHtml;
+}
+
+const getCheckoutHtml = () => {
+  const main = document.getElementById('root');
+  const dadosHtml = `
+  <section class="container">
+    <h2>Dados do cliente</h2>
+    </br>
+    <table class="tabela">
+      <tr>
+        <th>Cliente</th>
+        <th>Modelo</th>
+        <th>Placa</th>
+      </tr>
+      <tr id="tbody"></tr>
+    </table>
+    <div>
+      <label>Total de horas</label>
+      <input id="totalHora"
+        class="input"
+        type="text"
+        placeholder="Total de horas"
+        disabled
+      />
+      <br/>
+      <div>
+        <label>Total de horas</label>
+        <input id="valorApagar"
+          class="input"
+          type="text"
+          placeholder="Valor a pagar"
+          disabled
+        />
+      </div>
+      <div class="btn">
+        <button id="finalizar" class="btn-link">Finalizar</button>
       </div>
     </div>
   </section>
@@ -115,5 +156,6 @@ export const view = {
   getCadastro,
   getListaClientesHtml,
   getAtualizaHtml,
-  getCheckinHtml
+  getCheckinHtml,
+  getCheckoutHtml
 }

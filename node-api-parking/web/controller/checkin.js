@@ -1,12 +1,15 @@
 import { service } from "../service/index.js"
 import { view } from "../view/index.js"
+import { CadastroComponent } from "./cadastro.js";
+import { CheckoutComponent } from "./checkout.js";
+
 
 view.getCheckinHtml();
 
 let idCheckin = [];
 service.getActivities().then((dados) => {
   dados.forEach((element) => {
-    if (element != null) {
+    if (element.checkout_at == null) {
       idCheckin.push(element.vehicle_id);
     }
   });
@@ -57,16 +60,14 @@ const criarAsOpcoes = (arrayVeiculo) => {
   veiculosFiltrados.forEach(element => {
     const option = new Option(element.label, element.id);
     select.add(option);
-
+  });
   const main = document.getElementById('root');
-
   main.addEventListener('click', (event) => {
     const button = event.target.childNodes[0].data;
     const id = event.target.id;
-    
-    if(button === "Checkout") {
 
-   
+    if(button === "Checkout") {
+      CheckoutComponent(id);
     }
 
     if(button === "Checkin") {
@@ -74,9 +75,10 @@ const criarAsOpcoes = (arrayVeiculo) => {
       searchID(select.value);
     }
 
-    if(button === 'Adicionar Novo') console.log(button);
-    })
-  })
+    if(button === 'Adicionar Novo') {
+      CadastroComponent();
+    }
+   })
 }
 
 const searchID = (id) => {
@@ -90,7 +92,7 @@ const searchID = (id) => {
 };
 
 const checkinApi = (objeto) => {
-  service.postCheckin(objeto.label).then((dados) => {
+  service.postCheckin(objeto.label).then(dados => {
     alert(dados.message);
     window.location.reload();
   });

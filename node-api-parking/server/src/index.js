@@ -38,7 +38,7 @@ app.get('/api/activities', listActivivities);
   
 app.post('/api/checkin', addCheckin);
 
-app.put('/api/checkout/:id', addCheckout);
+app.put('/api/checkout', addCheckout);
 
 app.delete('/api/activities/:id', removeActivity);
 
