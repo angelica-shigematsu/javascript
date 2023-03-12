@@ -10,7 +10,7 @@ export const CadastroComponent = () => {
       }
     })
   })
-  view.getCadastro();
+  view.getCadastroHtml();
   const formulario = document.getElementById("formulario");
   formulario.addEventListener('submit', function(event) {
     event.preventDefault();

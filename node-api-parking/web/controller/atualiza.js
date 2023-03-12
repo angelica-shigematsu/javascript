@@ -1,15 +1,17 @@
 import { service } from "../service/index.js";
 import { ListaClienteComponent } from "./list-Clientes.js";
 
+const labelVehicle = []
 export const AtualizaComponent = (idParametro) => {
-  const label = []
-  service.getVeiculo().then(dados => {
-    dados.forEach(element => {
-      if (element.label != null) {
-        label.push(element.label);
-      }
+  const vehicle = (label) => {
+    service.getVeiculo().then(dados => {
+      dados.forEach(element => {
+        if (element.label != null && element.label != label) {
+          labelVehicle.push(element.label);
+        }
+      })
     })
-  })
+  }
   
   service.getVeiculo().then(dados => {
     dados.forEach(element => {
@@ -28,6 +30,7 @@ export const AtualizaComponent = (idParametro) => {
       const type = document.getElementById("tipo").value;
       const owner = document.getElementById("name").value;
 
+      vehicle(label);
       const atualizaCliente = {
         model,
         label,
@@ -36,8 +39,8 @@ export const AtualizaComponent = (idParametro) => {
         owner 
       }
 
-      if (label.includes(atualizaCliente.label)) {
-        return alert(`Já existe essa placa: ${atualizaCliente.label}`);
+      if (labelVehicle.includes(atualizaCliente.label)) {
+        return alert(`Existe carro com essa placa: ${atualizaCliente.label}`);
       } else {
         service.putVeiculo(atualizaCliente, idParametro).then(() => {
           cancelar();

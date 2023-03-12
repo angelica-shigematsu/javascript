@@ -51,7 +51,6 @@ const adicionarParametroNoInput = (element) => {
   const inputHora = document.getElementById('totalHora');
   const inputTotal = document.getElementById('valorApagar');
 
-  console.log(totalApagar)
   if (hora.minutos < 10 && hora.horas < 10)
 
   inputHora.value = `Tempo 0${hora.horas}:0${hora.minutos}`;

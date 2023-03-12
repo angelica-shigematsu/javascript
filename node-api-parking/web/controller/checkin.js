@@ -71,7 +71,7 @@ const criarAsOpcoes = (arrayVeiculo) => {
     }
 
     if(button === "Checkin") {
-      const select = document.getElementById('select');;
+      const select = document.getElementById('select');
       searchID(select.value);
     }
 
