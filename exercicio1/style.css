@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-bottom: 2vh;
+}
+
+body {
+  background-color: #ECC062;
+}
+
+.botaoLimpar {
+  background-color: #D3D3D3;
+  padding: 10px 41.5%;
+}
+
+button {
+  background-color: #ECC062 ;
+  font-size: 1em;
+  padding: 10px 40%;
+  border: none;  
+}
+
+.card {
+  background-color: #f8f8ff;
+  border: 0px solid blue;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  margin: 20vh 0 0 40vw;
+  padding: 3%;
+  width: 20vw;
+  align-text: right;
+}
+
+.field {
+  margin: 2vh 0 2vh 0;
+}
+
+input {
+  padding: 2%;
+  margin-right: 0;
+}
+
+button:hover {
+  background-color: #FFD700;
+}
+
