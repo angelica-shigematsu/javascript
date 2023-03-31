@@ -46,10 +46,6 @@ input {
   width: 20vw;
 }
 
-.item {
-  align-items: center;
-}
-
 button:hover {
   background-color: #FFD700;
 }

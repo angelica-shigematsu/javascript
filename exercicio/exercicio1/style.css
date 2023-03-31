@@ -24,7 +24,6 @@ button {
 
 .card {
   background-color: #f8f8ff;
-  border: 0px solid blue;
   border-radius: 50px;
   display: flex;
   flex-direction: column;
