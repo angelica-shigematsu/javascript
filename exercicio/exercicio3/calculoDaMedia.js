@@ -15,7 +15,6 @@ function calcularMediaIdade() {
       `Nome inválido`;
   }
 
-  console.log(validarValor(idade1), validarValor(idade2))
   if(validarValor(idade1) || validarValor(idade2)) {
     for (let i = 0; i < mensagemHtml.length; i++) {
       mensagemHtml[i].style.backgroundColor = "#000000";
