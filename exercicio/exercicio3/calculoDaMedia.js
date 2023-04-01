@@ -7,7 +7,7 @@ function calcularMediaIdade() {
   let nome2 = document.getElementById('nome2').value
   let idade2 = Number(document.getElementById('idade2').value)
 
-  if(!validarNome(nome1) || !validarNome(nome2)) {
+  if(validarNome(nome1) && validarNome(nome2)) {
     for (let i = 0; i < mensagemHtml.length; i++) {
       mensagemHtml[i].style.backgroundColor = "#000000";
     }
@@ -15,7 +15,7 @@ function calcularMediaIdade() {
       `Nome inválido`;
   }
 
-  if(!validarValor(idade1) || !validarValor(idade2)) {
+  if(validarValor(idade1) || validarValor(idade2)) {
     for (let i = 0; i < mensagemHtml.length; i++) {
       mensagemHtml[i].style.backgroundColor = "#000000";
     }
