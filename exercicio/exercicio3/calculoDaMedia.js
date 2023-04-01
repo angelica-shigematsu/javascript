@@ -7,7 +7,7 @@ function calcularMediaIdade() {
   let nome2 = document.getElementById('nome2').value
   let idade2 = Number(document.getElementById('idade2').value)
 
-  if(validarNome(nome1) && validarNome(nome2)) {
+  if(validarNome(nome1) || validarNome(nome2)) {
     for (let i = 0; i < mensagemHtml.length; i++) {
       mensagemHtml[i].style.backgroundColor = "#000000";
     }
@@ -15,6 +15,7 @@ function calcularMediaIdade() {
       `Nome inválido`;
   }
 
+  console.log(validarValor(idade1), validarValor(idade2))
   if(validarValor(idade1) || validarValor(idade2)) {
     for (let i = 0; i < mensagemHtml.length; i++) {
       mensagemHtml[i].style.backgroundColor = "#000000";
@@ -39,21 +40,20 @@ function calcularMedia(idade1, idade2) {
   return (idade1 + idade2) / 2;
 }
 
-function validarValor(valor) {
-  if (valor != null && !isNaN(valor)) 
-    return true
+function validarNome(nome) {
+
+  var padrao = /[0-9]/gi;
+  if (padrao.test(nome) || nome == "") return true;
 
   return false;
 }
 
-function validarNome(nome) {
-  if (nome == null) return false;
+function validarValor(valor) {
+  if (valor != 0 && !isNaN(valor)) { 
+    return false 
+  }
 
-  var padrao = /[0-9]/gi;
-
-  if (nome.match(padrao)) return true;
-
-  return false;
+  return true;
 }
 
 function limparCampos() {
