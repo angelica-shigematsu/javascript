@@ -11,17 +11,11 @@ body {
   background-color: #ECC062;
 }
 
-.botaoLimpar {
-  background-color: #D3D3D3;
-  padding: 10px 31%;
-}
-
 button {
   background-color: #ECC062 ;
   font-size: 1em;
-  margin-left: 3%;
+  margin: 5% 0 0 0;
   padding: 10px 30%; 
-  margin-bottom: 5%;
 }
 
 .btn {
