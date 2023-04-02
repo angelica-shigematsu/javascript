@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cálculo de consumo médio</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="mensagem">
+
+  </div>
+  <div class="foto">
+    <img src="./images/car.jpg" alt="">
+    <div class="autorFoto">Foto: Tyler Clemmensen </div>
+  </div>
+  <h1>Calcular consumo médio</h1>
+  <div class="card">
+    <div class="card-field">
+      <input type="text" id="distanciaEmKm" placeholder="Distância em km"required>
+    </div>
+    <div class="field">
+      <input type="text" id="gastoCombustivel" placeholder="Combustível gasto" required>
+    </div>
+    <div class="btn">
+      <button onclick="calcularConsumoMedio()">Calcular</button>
+      <button onclick="limparCampo()" class="botaoLimpar">Limpar</button>
+    </div>
+    <div class="field">
+      <label>Consumo médio de combustível por km</label>
+      <input type="text" id="consumoMedio" required disabled>
+    </div>
+  </div>
+</body>
+  <script type="text/javascript" src="./calculoConsumoMedio.js"></script>
+</html>

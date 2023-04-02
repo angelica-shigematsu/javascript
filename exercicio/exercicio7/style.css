@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin: 3% 25% 0 0%;
+  postion: absolute;
+  float: right;
+}
+
+.autorFoto {
+ position: absolute;
+ margin: 49% 0 0 20%;
+}
+
+body {
+  background-image: linear-gradient(to left, #ffc0cb, #ffd191, #ffd4b1);
+}
+
+.botaoLimpar {
+  background-color: #D3D3D3;
+  margin-top: 5%;
+  padding: 10px 44%;
+}
+
+button {
+  background-color: #ECC062 ;
+  font-size: 1em;
+  padding: 10px 42%;
+  border: none;  
+}
+
+.card {
+  border-radius: 50px;
+  margin: 15% 0 0 50%;
+  padding: 3%;
+  position: absolute;
+  width: 20vw;
+  align-text: right;
+}
+
+.field {
+  margin: 2vh 0 2vh 0;
+}
+
+input {
+  padding: 2%;
+  margin-right: 0;
+  border: none;
+  border-bottom: 1px solid #ECC062;
+  width: 20vw;
+}
+
+img {
+  width: 34%;
+  position: absolute;
+}
+
+button:hover {
+  background-color: #ffc0cb;
+}
+
+.mensagem {
+  color: #ffff;
+  padding: 6px;
+}
+
