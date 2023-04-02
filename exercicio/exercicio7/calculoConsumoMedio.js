@@ -5,7 +5,6 @@ function calcularConsumoMedio() {
   let distanciaEmKm = Number(document.getElementById('distanciaEmKm').value)
   let gastoCombustivel = Number(document.getElementById('gastoCombustivel').value)
 
-  console.log(validarValor(distanciaEmKm));
   if(validarValor(distanciaEmKm)) return imprimirMensagem(mensagemHtml,'Distância inválida')
 
   if(validarValor(gastoCombustivel)) return imprimirMensagem(mensagemHtml,'Gasto de combustível inválido')
