@@ -22,3 +22,8 @@ function validarValor(valor) {
 
   return false;
 }
+
+function limparCampo() {
+  document.getElementById('raio').value = '';
+  document.getElementById('area').value = '';
+}
