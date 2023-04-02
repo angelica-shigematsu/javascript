@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcular troco</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="mensagem">
+
+  </div>
+    <div class="card">
+    <div class="card-body1">
+      <h2>Calcular troco</h2>
+      <div class="field">
+        <input type="text" id="precoUnitario" placeholder="Preço unitário" required>
+      </div>
+      <div class="field">
+        <input type="number" id="unidade" placeholder="Quantidade de unidades" required>
+      </div>
+      <div class="field">
+        <input type="number" id="dinheiro" placeholder="R$" required>
+      </div>
+      <div class="btn">
+        <button onclick="calcularTroco()">Calcular</button>
+      </div>
+    </div>
+    <div class="card-body2">
+      <h2>Troco</h2>
+      <img src="./images/coin.png" alt="Imagem de moeda de ouro">
+      <div class="field">
+        <input type="text" id="troco" placeholder="Troco" required disabled>
+      </div>
+    </div>
+  </div>
+</body>
+  <script type="text/javascript" src="./calculoDoTroco.js"></script>
+</html>
