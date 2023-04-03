@@ -1,11 +1,10 @@
 const corPreto = '#000000';
-const corAmarelo = '#ECC062'
 
 function calcularBhaskara() {
 
   document.getElementById("x1").value =  '';
   document.getElementById("x2").value = '';
-  
+
   let raiz = 0;
   let mensagemHtml = document.getElementsByClassName('mensagem');
 
