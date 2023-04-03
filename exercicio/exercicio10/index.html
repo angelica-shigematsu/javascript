@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achar o menor número</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Achar o menor número</h1>
+    <div class="card-field">
+      <input type="number" id="primeiroNumero" placeholder="Insira 1º número">
+      <input type="number" id="segundoNumero" placeholder="Insira  2º número">
+      <input type="number" id="terceiroNumero" placeholder="Insira 3º número">
+    </div>
+    <div class="btn">
+      <button onclick="listarMenorNumero()">Enviar</button>
+      <button onclick="limparCampos()" class="botaoLimpar">Limpar</button>
+    </div>
+    <div class="field">
+      <label>Menor número: </label>
+      <input type="text" id="menorNumero" disabled>
+    </div>
+  </div>
+</body>
+  <script type="text/javascript" src="./mostrarMenorNumero.js"></script>
+</html>
