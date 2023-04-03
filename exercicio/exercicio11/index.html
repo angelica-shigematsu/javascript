@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cálculo nota final</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="foto">
+    <img src="./images/classroom.jpg" alt="">
+    <div class="autorFoto">Foto: Shubham Sharan </div>
+  </div>
+  <div class="card">
+    <h1>Calcular nota final</h1>
+    <div class="card-field">
+      <input type="number" id="nota1" placeholder="Insira 1º nota">
+    </div>
+    <div class="field">
+      <input type="number" id="nota2" placeholder="Insira 2º nota">
+    </div>
+    <div class="btn">
+      <button onclick="calcularNota()">Calcular</button>
+      <button onclick="limparCampos()" class="botaoLimpar">Limpar</button>
+    </div>
+    <div class="field">
+      <label>Nota final: </label>
+      <input type="text" id="notaFinal" disabled>
+    </div>
+    <div class="field">
+      <label>Resultado: </label>
+      <input type="text" id="resultado" disabled>
+    </div>
+  </div>
+</body>
+  <script type="text/javascript" src="./calculoNota.js"></script>
+</html>
