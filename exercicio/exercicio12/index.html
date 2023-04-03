@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cálculo de Bhaskara</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="mensagem">
+    
+  </div>
+  <div class="card">
+    <h1>Calcular Bhaskara</h1>
+    <div class="card-field">
+      <input type="number" id="medidaA" placeholder="Digite o valor a">
+      <input type="number" id="medidaB" placeholder="Digite o valor b">
+      <input type="number" id="medidaC" placeholder="Digite o valor c">
+    </div>
+    <div class="btn">
+      <button onclick="calcularBhaskara()">Calcular</button>
+      <button onclick="limparCampos()" class="botaoLimpar">Limpar</button>
+    </div>
+
+    <div class="field">
+      <label>x1:</label>
+      <input type="text" id="x1" disabled>
+    </div>
+    <div class="field">
+      <label>x2:</label>
+      <input type="text" id="x2" disabled>
+    </div>
+  </div>
+</body>
+  <script type="text/javascript" src="./calculoBhaskara.js"></script>
+</html>
