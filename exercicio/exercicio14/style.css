@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-bottom: 2vh;
+  align-text: center;
+}
+
+body {
+  background-color: #3CB371;
+}
+
+button {
+  background-color: #ECC062 ;
+  font-size: 1em;
+  margin: 3% 0 0 0;
+  padding: 10px;
+  width: 105%; 
+}
+.card {
+  margin-top: 20vh;
+  margin-left: 25%;
+  width: 50%;
+}
+
+.card-body1 {
+  border-right: 3px solid #000;
+  float: left;
+  padding: 3%;
+  width: 20vw;
+
+}
+.card-body2 {
+  float: right;
+  padding: 3%;
+  width: 20vw;
+}
+
+.field {
+  margin: 2vh 0 2vh 0;
+}
+
+input {
+  padding: 2%;
+  margin-right: 0;
+  border: none;
+  border-bottom: 1px solid #0000;
+  width: 20vw;
+}
+
+img {
+  margin-left: 30%;
+}
+
+button:hover {
+  background-color: #FFD700;
+}
+
+.mensagem {
+  color: #ffff;
+  padding: 6px;
+}
