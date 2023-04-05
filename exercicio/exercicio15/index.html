@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glicose no sangue</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="foto">
+    <img src="./images/donateBlood.jpg" alt="Imagem de um frasco sendo inserido sangue">
+    <div class="autorFoto">Hush Naidoo Jade Photography</div>
+  </div>
+  <div class="card">
+      <h2>Classificação de glicose no sangue</h2>
+    <div class="card-field">
+      <input type="number" id="qtdeGlicose" placeholder="Insira qtde de glicose">
+    </div>
+    <div class="mensagem" id="mensagem">
+    </div>
+    <div class="btn">
+      <button onclick="classificarGlicoseSangue()">Classificar</button>
+      <button onclick="limparCampos()" class="botaoLimpar">Limpar</button>
+    </div>
+    <div class="field">
+      <label>Classificação: </label>
+      <input type="text" id="classificacao" disabled>
+    </div>
+  </div>
+</body>
+  <script type="text/javascript" src="./classificarGlicoseSangue.js"></script>
+</html>
