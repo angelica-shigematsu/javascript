@@ -42,7 +42,7 @@ function calcularDinheiroFalta(precoTotal, dinheiro) {
 }
 
 function validarValor(valor) {
-  if ( valor <= 0 ) return true;
+  if ( valor <= 0 && valor != "") return true;
 
   return false;
 }
