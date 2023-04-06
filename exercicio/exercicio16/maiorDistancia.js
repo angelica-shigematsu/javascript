@@ -25,9 +25,9 @@ function classificarMaiorDistancia() {
 
   let segundoMaiorNumero = (segundaDistancia >= primeiraDistancia) && (segundaDistancia > terceiraDistancia);
 
-  let terceiroMaiorNumero = terceiraDistancia >= primeiraDistancia && terceiraDistancia > segundaDistancia;
+  let terceiroMaiorNumero = (terceiraDistancia >= primeiraDistancia) && (terceiraDistancia > segundaDistancia);
 
-  let numerosIguais = terceiraDistancia === primeiraDistancia && terceiraDistancia === segundaDistancia;
+  let numerosIguais = (terceiraDistancia === primeiraDistancia) && (terceiraDistancia === segundaDistancia);
 
   if (primeiroMaiorNumero)  {
     imprimirMensagemErro(mensagemHtml, "");
