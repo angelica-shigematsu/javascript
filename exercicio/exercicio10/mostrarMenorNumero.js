@@ -3,23 +3,23 @@ function listarMenorNumero() {
   let segundoNumero = Number(document.getElementById('segundoNumero').value);
   let terceiroNumero = Number(document.getElementById('terceiroNumero').value);
 
-  let primeiroMaiorNumero = (primeiroNumero <= segundoNumero) && (primeiroNumero < terceiroNumero);
+  let primeiroMenorNumero = (primeiroNumero <= segundoNumero) && (primeiroNumero < terceiroNumero);
 
-  let segundoMaiorNumero = (segundoNumero <= primeiroNumero) && (segundoNumero < terceiroNumero);
+  let segundoMenorNumero = (segundoNumero <= primeiroNumero) && (segundoNumero < terceiroNumero);
 
-  let terceiroMaiorNumero = terceiroNumero <= primeiroNumero && terceiroNumero < segundoNumero;
+  let terceiroMenorNumero = terceiroNumero <= primeiroNumero && terceiroNumero < segundoNumero;
 
   let numerosIguais = terceiroNumero === primeiroNumero && terceiroNumero === segundoNumero;
 
-  if(primeiroMaiorNumero) {
+  if(primeiroMenorNumero) {
     return document.getElementById('menorNumero').value = primeiroNumero
   };
 
-  if(segundoMaiorNumero) {
+  if(segundoMenorNumero) {
     return document.getElementById('menorNumero').value = segundoNumero;
   }
 
-  if(terceiroMaiorNumero) {
+  if(terceiroMenorNumero) {
     return document.getElementById('menorNumero').value = terceiroNumero;
   }
 
