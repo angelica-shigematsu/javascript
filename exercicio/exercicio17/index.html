@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Números múltiplos</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="card">
+    <div class="card-body">
+      <h1>Mostrar se é multiplo</h1>
+      <div class="field">
+        <div class="mensagem">
+
+        </div>
+        <input type="number" id="primeiroNumero" placeholder="Insira 1º numero">
+        <input type="number" id="segundoNumero" placeholder="Insira  2º numero">
+      </div>
+      <div class="btn">
+        <button onclick="classificarNumerosMultiplos()">Enviar</button>
+        <button onclick="limparCampos()" class="botaoLimpar">Limpar</button>
+      </div>
+      <label>Resultado: </label>
+      <div class="field">
+        <input type="text" id="resultado" disabled>
+      </div>
+    </div>
+  </div>
+</body>
+  <script type="text/javascript" src="./numeroMultiplo.js"></script>
+</html>

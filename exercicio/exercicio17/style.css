@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-bottom: 2vh;
+}
+
+body {
+  background-image: linear-gradient(to top, #5A98C1,#ffd191, #ffd4b1);
+  height: 746px;
+}
+
+.botaoLimpar {
+  background-color: #D3D3D3;
+  padding: 10px 22%;
+}
+
+button {
+  background-color: #5A98C1 ;
+  font-size: 1em;
+  padding: 10px 22.5%;
+  border: none;
+  margin-bottom: 3%; 
+}
+
+.card {
+  align-text: right;
+  background-color: #EEF0F2;
+  display: flex;
+  flex-direction: column;
+  height: 89%;
+  padding: 3%;
+  width: 40vw;
+}
+
+.card-body{
+  margin: 20%;
+  width: 60%;
+}
+
+.field {
+  margin: 2vh 0 2vh 0;
+}
+
+input {
+  background-color: #E6E8E9;
+  padding: 2%;
+  margin-bottom: 2%;
+  border: none;
+  width: 13vw;
+}
+
+button:hover {
+  background-color: #ffd191;
+}
+
+.mensagem {
+  color: #ffff ;
+  margin-bottom: 2%;
+  padding: 6px;
+}
+
