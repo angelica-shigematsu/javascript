@@ -29,7 +29,7 @@ function classificarGlicoseSangue() {
 }
 
 function validarValor(valor) {
-  if ( valor <= 0 && valor != "") return true;
+  if ( valor <= 0 && valor == "") return true;
 
   return false;
 }
