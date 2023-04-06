@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maior distância</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Mostrar a maior distância</h1>
+    <div class="card-field">
+      <div class="mensagem">
+
+      </div>
+      <input type="number" id="primeiraDistancia" placeholder="Insira 1º distância">
+      <input type="number" id="segundaDistancia" placeholder="Insira  2º distância">
+      <input type="number" id="terceiraDistancia" placeholder="Insira 3º distância">
+    </div>
+    <div class="btn">
+      <button onclick="classificarMaiorDistancia()">Enviar</button>
+      <button onclick="limparCampos()" class="botaoLimpar">Limpar</button>
+    </div>
+    <div class="field">
+      <label>Maior distância: </label>
+      <input type="text" id="maiorDistancia" disabled>
+    </div>
+  </div>
+</body>
+  <script type="text/javascript" src="./maiorDistancia.js"></script>
+</html>
