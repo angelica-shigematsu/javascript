@@ -2,7 +2,7 @@ const corVermelho = '#D3616C';
 
 const messageError = "Não permitido inserir números negativos ou valor vazio";
 
-function calcularConsumoMedio() {
+function calcularSalarioTotal() {
   let mensagemHtml = document.getElementsByClassName('mensagem');
 
   imprimirMensagem(mensagemHtml,"")
