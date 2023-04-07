@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 10% 20% 0 0%;
+  postion: absolute;
+  float: right;
+}
+
+.autorFoto {
+ position: absolute;
+ margin: 49% 0 0 40%;
+}
+
+body {
+  background-color: #ffd191;
+}
+
+.btnClean {
+  background-color: #E3A14D;
+  margin-top: 5%;
+  padding: 10px 44%;
+}
+
+.btnSend {
+  background-image: linear-gradient(to left, #F9B055, #F1A23F, #E5840C);
+}
+
+button {
+  font-size: 1em;
+  padding: 10px 42%;
+  border: none;  
+}
+
+.card {
+  border-radius: 50px;
+  margin: 15% 0 0 60%;
+  padding: 3%;
+  position: absolute;
+  width: 20vw;
+  align-text: right;
+}
+
+.field {
+  margin: 2vh 0 2vh 0;
+}
+
+input {
+  background-color: #ffd191;
+  border: none;
+  border-bottom: 1px solid #E5840C;
+  padding: 2%;
+  margin-bottom: 6%;
+  width: 20vw;
+}
+
+input:focus{
+  outline: 2px solid #E5840C;
+}
+
+img {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+}
+
+button:hover {
+  background-color: #E5840C;
+}
+
+.mensagem {
+  margin-bottom: 2%;
+  padding: 6px;
+}
+
