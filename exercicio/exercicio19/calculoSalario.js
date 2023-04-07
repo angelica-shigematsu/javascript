@@ -35,7 +35,6 @@ function calcularSalario(salario, porcentagem) {
 function validarValor(valor) {
   if (valor == "") return true;
   if (valor < 0.0) return true;
-  if (isNaN(valor)) return true;
 
   return false;
 }
