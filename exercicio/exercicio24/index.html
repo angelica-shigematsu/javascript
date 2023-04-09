@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Números em ordem crescente</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Mostras números em ordem</h1>
+    <div class="field">
+      <div class="mensagem">
+
+      </div>
+      <input type="number" id="numero1" placeholder="Insira 1º">
+      <input type="number" id="numero2" placeholder="Insira 2º">
+      <input type="number" id="numero3" placeholder="Insira 3º">
+      <input type="number" id="numero4" placeholder="Insira 4º">
+      <input type="number" id="numero5" placeholder="Insira 5º">
+    </div>
+    <div class="btn">
+      <button onclick="mostrarEmOrdem()">Enviar</button>
+      <button onclick="limparCampos()" class="botaoLimpar">Limpar</button>
+    </div>
+    <div class="field">
+      <label>Resultado: </label>
+      <input type="text" id="resultado" disabled>
+    </div>
+  </div>
+</body>
+  <script type="text/javascript" src="./ordernarNumeros.js"></script>
+</html>

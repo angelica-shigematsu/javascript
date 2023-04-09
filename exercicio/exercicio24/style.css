@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-bottom: 2vh;
+}
+
+body {
+  background-image: linear-gradient(to top, #5A98C1,#ffd191, #ffd4b1);
+  height: 680px;
+}
+
+.botaoLimpar {
+  background-color: #D3D3D3;
+  padding: 10px 41.5%;
+}
+
+button {
+  background-color: #5A98C1 ;
+  border: none;
+  font-size: 1em;
+  padding: 10px 42%;
+  margin: 3%; 
+}
+
+.card {
+  background-color: #EEF0F2;
+  display: flex;
+  flex-direction: column;
+  margin: 10vh 0 0 40vw;
+  padding: 3%;
+  width: 20vw;
+  align-text: right;
+}
+
+.field {
+  margin: 2vh 0 2vh 0;
+}
+
+#temperatura {
+  padding: 2%;
+  margin-bottom: 2%;
+  border: none;
+  border-bottom: 1px solid #5A98C1;
+  width: 19vw;
+}
+
+button:hover {
+  background-color: #ffd191;
+}
+
+.mensagem {
+  color: #ffff ;
+  padding: 6px;
+  margin-bottom: 2%;
+}
+
+#resultado {
+  background-color:  background-color: #E6E8E9;
+  border: none;
+  padding: 2%;
+  margin-bottom: 2%;
+  width: 19vw;
+}
+
+
+input {
+  background-color: #E6E8E9;
+  padding: 2%;
+  margin-bottom: 2%;
+  border: none;
+  width: 13vw;
+}
+
+
+
