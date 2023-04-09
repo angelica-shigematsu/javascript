@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Números Ímpares</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Somar números ímpares</h1>
+    <div class="field">
+      <div class="mensagem">
+
+      </div>
+      <input type="number" id="numeroInicial" placeholder="Insira número inicial">
+      <input type="number" id="numeroFinal" placeholder="Insira número final">
+    </div>
+    <div class="btn">
+      <button onclick="somarImpares()">Enviar</button>
+      <button onclick="limparCampos()" class="botaoLimpar">Limpar</button>
+    </div>
+    <div class="field">
+      <label>Soma dos ímpares: </label>
+      <input type="text" id="resultado" disabled>
+    </div>
+  </div>
+</body>
+  <script type="text/javascript" src="./somaImpares.js"></script>
+</html>
