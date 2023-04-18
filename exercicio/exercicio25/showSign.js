@@ -2,7 +2,7 @@ const corVermelho = '#D3616C';
 const sign = ['Áries', 'Touro', 'Gêmeos', 'Câncer', 'Leão', 'Virgem', 'Libra', 'Escorpião', 'Sagitário', 'Capricórnio', 'Aquário', 'Peixes']
 
 function showSign() {
-  let mensagemHtml = document.getElementsByClassName('mensagem');
+  let mensagemHtml = document.getElementsByClassName('message');
   let result = '';
 
   printMessage(mensagemHtml,"");
@@ -109,7 +109,7 @@ function printMessage(mensagemHtml, mensagem) {
       mensagemHtml[i].style.backgroundColor = '';
     }
   }
-  return document.getElementsByClassName('mensagem')[0].innerHTML = mensagem;
+  return document.getElementsByClassName('message')[0].innerHTML = mensagem;
 }
 
 function cleanFields() {

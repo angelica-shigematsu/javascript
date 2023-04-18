@@ -11,7 +11,7 @@ body {
   height: 680px;
 }
 
-.botaoLimpar {
+.cleanField {
   background-color: #D3D3D3;
   padding: 10px 41.5%;
 }
@@ -46,20 +46,11 @@ button:hover {
   background-color: #A17BAB;
 }
 
-.mensagem {
+.message {
   color: #ffff ;
   padding: 6px;
   margin-bottom: 2%;
 }
-
-#resultado {
-  background-color:  background-color: #E6E8E9;
-  border: none;
-  padding: 2%;
-  margin-bottom: 2%;
-  width: 19vw;
-}
-
 
 input {
   background-color: #E6E8E9;
