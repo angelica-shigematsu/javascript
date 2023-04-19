@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palíndroma</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="card">
+    <div class="card-body">
+      <h1>Mostrar se é palíndroma</h1>
+      <div class="message">
+
+      </div>
+      <div class="field">
+        <input type="text" id="word" placeholder="Digite uma palavra"> 
+      </div>
+      <div class="btn">
+        <button onclick="checkPalindroma()">Enviar</button>
+        <button onclick="cleanFields()" class="cleanField">Limpar</button>
+      </div>
+      <label>Resultado: </label>
+      <div class="field">
+        <input type="text" id="result" disabled>
+      </div>
+    </div>
+  </div>
+</body>
+  <script type="text/javascript" src="./palindroma.js"></script>
+</html>
