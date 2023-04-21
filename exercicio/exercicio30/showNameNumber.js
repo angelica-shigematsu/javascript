@@ -1,3 +1,4 @@
+const corVermelho = '#D3616C';
 const messageError = 'Somente insira números de até 2 algorismo e sem ser negativos'
 function getNameOfNumbers() {
     let number = document.getElementById('number').value;
@@ -9,7 +10,7 @@ function getNameOfNumbers() {
     let isNumberZeroToNine = Number(number) >= 0 && Number(number) <= 9;
 
     if(Number(number) < 0 || Number(number) > 99)
-        return printMessage(mensagemHtml, messageErro);
+        return printMessage(mensagemHtml, messageError);
 
     if (isNumberZeroToNine) {
         result = nameOfNumbers(number);
