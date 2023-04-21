@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Números</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="card">
+    <div class="card-body">
+      <h1>Nomear os números de até dois algorismo</h1>
+      <div class="field">
+        <div class="message">
+
+        </div>
+        <input type="text" id="number" placeholder="Digite um número entre 0 e 100"> 
+      </div>
+      <div class="btn">
+        <button onclick="getNameOfNumbers()">Enviar</button>
+        <button onclick="cleanFields()" class="cleanField">Limpar</button>
+      </div>
+      <label>Resultado: </label>
+      <div class="field">
+        <input type="text" id="result" disabled>
+      </div>
+    </div>
+  </div>
+</body>
+  <script type="text/javascript" src="./showNameNumber.js"></script>
+</html>
