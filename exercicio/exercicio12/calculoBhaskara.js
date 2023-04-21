@@ -13,7 +13,6 @@ function calcularBhaskara() {
   let medidaC = Number(document.getElementById('medidaC').value);
 
   raiz = calcularRaiz(medidaB, medidaA, medidaC);
-  console.log(raiz)
 
   if(raiz < 0) return imprimirMensagem(mensagemHtml, 'Esta equação não possui raízes reais');
 
