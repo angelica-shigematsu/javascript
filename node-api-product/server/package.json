@@ -1,0 +1,18 @@
+{
+  "name": "tracofood",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -r esm ./src/index.js"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "sqlite": "^4.2.1",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "eslint": "^8.44.0"
+  }
+}
