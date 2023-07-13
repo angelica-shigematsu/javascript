@@ -35,7 +35,7 @@ const listProducts = async (request, response) => {
 }
 
 const listByProduct = async (request, response) => {
-  const { name } = request.body;
+  const { name } = request.query
   const db = await openDatabase();
 
   const product = await db.all(`

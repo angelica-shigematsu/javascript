@@ -11,7 +11,7 @@ const app = express();
 
 app.use(express.json());
 
-app.post('/api/products', createProduct )
+app.post('/api/product', createProduct )
 
 app.get('/api/products', listProducts)
 
