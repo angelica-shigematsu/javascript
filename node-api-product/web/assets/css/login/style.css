@@ -1,0 +1,124 @@
+:root {
+  --btn: #dc9000;
+  --border: #ebf0ff;
+  --colorGray: #9098b1;
+  --colorWhite: #FFFFFF;
+  --colorBlue: #223263;
+  --colorRegister: #40bfff;
+  font-family: "Poppins", "Arial";
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1em
+}
+
+a {
+  color: var(--colorRegister);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn {
+  margin-left: 2vw;
+  width: 20vw;
+  height: 8vh;
+
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+.btn-entrar {
+  border: 1px solid var(--btn);
+  background-color: var(--btn);
+  color: var(--colorWhite);
+}
+
+.btn-google {
+  border: var(--border);
+  color: var(--colorGray);
+}
+
+.btn-register {
+  font-size: 0.8em;
+}
+
+.container {
+  display: flex;
+}
+
+.card-login {
+  margin: 6% 0 0 15%;
+}
+
+.item {
+  margin: 6%;
+}
+
+input {
+  border: 1px solid var(--border);
+  padding: 3%;
+  width: 20vw;
+  height: 5vh;
+}
+
+.input-group {
+  color: var(--colorGray);
+}
+
+.imagem{
+  width: 40vw;
+  height: 100vh;
+}
+
+.title {
+  color: var(--colorBlue);
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+p {
+  maring-top: 0;
+  color: var(--colorGray);
+  text-align: center;
+}
+
+#iconeMessage {
+  background-image: url("../../img/Message.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 1.3em;
+  padding-left: 2.3em;
+}
+
+#iconePassword {
+  background-image: url("../../img/Password.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 1.3em;
+  padding-left: 2.3em;
+}
+
+#iconeGoogle {
+  background-image: url("../../img/Google.png");
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  background-size: 1.3em;
+  padding-left: 2.3em;
+}
+
+#iconeUser {
+  background-image: url("../../img/User.png");
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  background-size: 1.3em;
+  padding-left: 2.5em;
+}
+
+::-webkit-input-placeholder {
+  color: var(--colorGray);
+  font: 1em Poppins, Arial;
+}
+
