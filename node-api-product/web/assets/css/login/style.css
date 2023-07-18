@@ -86,7 +86,7 @@ p {
 }
 
 #iconeMessage {
-  background-image: url("../../img/Message.png");
+  background-image: url("../../img/login/Message.png");
   background-repeat: no-repeat;
   background-position: left;
   background-size: 1.3em;
@@ -94,7 +94,7 @@ p {
 }
 
 #iconePassword {
-  background-image: url("../../img/Password.png");
+  background-image: url("../../img/login/Password.png");
   background-repeat: no-repeat;
   background-position: left;
   background-size: 1.3em;
@@ -102,7 +102,7 @@ p {
 }
 
 #iconeGoogle {
-  background-image: url("../../img/Google.png");
+  background-image: url("../../img/login/Google.png");
   background-repeat: no-repeat;
   background-position: 20px 20px;
   background-size: 1.3em;
@@ -110,7 +110,7 @@ p {
 }
 
 #iconeUser {
-  background-image: url("../../img/User.png");
+  background-image: url("../../img/login/User.png");
   background-repeat: no-repeat;
   background-position: 20px 20px;
   background-size: 1.3em;

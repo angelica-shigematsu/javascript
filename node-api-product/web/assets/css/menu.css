@@ -1,0 +1,61 @@
+:root {
+  --colorMenu: #6A0000;
+  --colorWhite: #FFFFFF;
+  --colorOrange: #dc9000;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--colorWhite);
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+}
+
+#iconeOthers {
+  margin: 15px;
+  height: 30px;
+}
+
+#iconePerfil {
+  margin: 10px;
+  height: 50px;
+}
+
+#logo {
+  margin-left: 3vw;
+} 
+
+ul li {
+  border: 1px solid var(--colorWhite);
+  border-left: none;
+  text-align: center;
+  padding: 0.5em 0.5em 0.5em;
+  list-style: none;
+}
+li:hover {
+  background-color: var(--colorOrange)
+}
+nav {
+  background-color: var(--colorMenu);
+  height: 100vh;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -10px;
+}
+
+header{
+  display: flex;
+  background-color: var(--colorOrange);
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  height: 10vh;
+}
