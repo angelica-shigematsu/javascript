@@ -23,7 +23,6 @@ a {
   margin-left: 2vw;
   width: 20vw;
   height: 8vh;
-
 }
 
 .btn:hover {
@@ -80,7 +79,7 @@ input {
 }
 
 p {
-  maring-top: 0;
+  margin-top: 0;
   color: var(--colorGray);
   text-align: center;
 }

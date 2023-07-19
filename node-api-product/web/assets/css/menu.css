@@ -8,23 +8,48 @@
   padding: 0;
 }
 
-a {
+#menu-lateral {
   color: var(--colorWhite);
   text-decoration: none;
+}
+
+.submenu {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: 3vw;
+}
+
+.submenu:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--colorOrange)
+}
+
+section form {
+  margin: 1vh 1vw 0 22vw;
+}
+
+section .header-menu {
+  margin: 1vh 1vw 0 22vw;
+}
+
+.header-menu {
+  display: flex;
+  flex-direction: row;
 }
 
 header {
   display: flex;
 }
+#iconeOthers, #iconePerfil {
+  margin: 1%;
+}
 
 #iconeOthers {
-  margin: 15px;
-  height: 30px;
+  height: 40%;
 }
 
 #iconePerfil {
-  margin: 10px;
-  height: 50px;
+  height: 60%;
 }
 
 #logo {
@@ -57,5 +82,29 @@ header{
   flex-direction: row;
   justify-content: flex-end;
   position: relative;
-  height: 10vh;
+  height: 6%;
+}
+
+@media (min-width: 360px) and (max-width: 900px) {
+  
+  header {
+    height: 30%;
+  }
+
+  #iconeOthers, #iconePerfil {
+    margin: 1%;
+  }
+
+  #iconeOthers {
+    width: 20px;
+  }
+
+  #iconePerfil {
+    width: 30px;
+  }
+
+  section form {
+    margin: 1vh 1vw 1vw 1vw;
+  }
+
 }

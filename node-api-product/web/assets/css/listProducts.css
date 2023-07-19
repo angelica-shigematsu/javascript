@@ -1,0 +1,100 @@
+:root {
+  --colorGray: #9098b1;
+  --colorBlue: #223263;
+  --colorOrange: #dc9000;
+  --colorWhite: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: var(--colorBlue);
+}
+
+.btn {
+  width: 8vw;
+  height: 6vh;
+  font-size: 1em;
+}
+
+.btn-entrar {
+  border: 1px solid var(--colorOrange);
+  border-radius: 3px;
+  background-color: var(--colorOrange);
+  color: var(--colorWhite);
+}
+
+.card-title {
+  margin-top: 3vh;
+}
+.card-details {
+  right: 3%;
+  position: absolute;
+}
+
+h2, .description {
+  white-space: nowrap;
+}
+
+h2, .price {
+  color: var(--colorBlue);
+}
+
+#imgProduct {
+  margin-right: 3vw;
+  width: 7%;
+  height: 9%;
+}
+
+.description {
+  color: var(--colorGray);
+}
+
+.price {
+  margin-left: 2vw;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+section .header-menu {
+  margin: 1vh 1vw 0 22vw;
+}
+
+section form {
+  box-shadow: 5px 5px 8px #888888;
+}
+section form{
+  border-radius: 5px;
+  border: 1px solid var(--colorGray);
+  display: flex;
+  padding: 0.5%;
+  flex-direction: row;
+}
+
+@media (min-width: 360px) and (max-width: 900px) {
+  nav {
+    visibility: hidden;
+  }
+  #imgProduct {
+    margin-right: 3vw;
+    width: 10%;
+    height: 12%;
+  }
+
+  .btn {
+    height: 20%;
+    width: 100%;
+    font-size: 0.7em;
+  }
+
+  .card-details, .card-title {
+    margin-top: 0%;
+    font-size: 0.4em;
+  }
+  
+  .price {
+    font-size: 0.7em;
+    font-weight: bold;
+  }
+
+}
+
