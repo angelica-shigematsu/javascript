@@ -1,10 +1,41 @@
+.btn-price {
+  margin: 2%;
+  padding: 3%;
+}
 .filter{
   margin-top: -2%;
   float: right;
 }
 
-#iconeFilter, #iconeAlpha {
-  width: 15%;
-  margin-right: 3vw;
+#iconeFilter:hover, .filter {
+  display: block;
 }
 
+#iconeFilter, #iconeAlpha {
+  margin-right: 3vw;
+}
+#iconeFilter {
+  width: 30%;
+}
+
+#iconeAlpha {
+  width: 15%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

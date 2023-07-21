@@ -1,5 +1,9 @@
 import products from './mockProducts.js';
-import { ListProductAlphaComponent } from './controllers/ListProductController.js';
+import { ListProductAlpha, 
+          ListByPrice5To25,
+          ListByPrice26To45,
+          ListByPrice46ToMore
+         } from './controllers/ListProductController.js';
 
  window.addEventListener("load", function() {
   section(products);
@@ -8,16 +12,28 @@ import { ListProductAlphaComponent } from './controllers/ListProductController.j
 
 window.addEventListener("click", function(event) {
   const option = event.target.id;
+
+  let sortProducts = [];
   
   switch (option) {
-    case "iconeFilter":
+    case "firstFilter":
+      sortProducts = ListByPrice5To25(products)
+      section(sortProducts)
       break;
+    case "secondFilter":
+      sortProducts = ListByPrice26To45(products)
+      section(sortProducts)
+      break;
+    case "thirdFilter":
+        sortProducts = ListByPrice46ToMore(products)
+        section(sortProducts)
+        break;
     case "iconeAlpha": 
-      const sortProducts = ListProductAlphaComponent(products);
+      sortProducts = ListProductAlpha(products);
       section(sortProducts)
       break;
   }
-
+  sortProducts = []
 });
 
 const section = (allProducts) => {
