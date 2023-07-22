@@ -51,11 +51,11 @@ button {
 header {
   display: flex;
 }
-#iconeOthers, #iconePerfil {
+#iconeCart, #iconeNotification, #iconePerfil {
   margin: 1%;
 }
 
-#iconeOthers {
+#iconeCart, #iconeNotification {
   height: 40%;
 }
 
@@ -102,7 +102,7 @@ header{
     height: 30%;
   }
 
-  #iconeOthers, #iconePerfil {
+  #iconeCart, #iconeNotification, #iconePerfil {
     margin: 1%;
   }
 
@@ -110,7 +110,7 @@ header{
     width: 40px;
   }
 
-  #iconeOthers {
+  #iconeCart, #iconeNotification {
     width: 20px;
   }
 
