@@ -5,19 +5,16 @@ import { ListProductAlpha,
           ListByPrice46ToMore
          } from './controllers/ListProductController.js';
 import { AddProductCart } from './controllers/AddProductCartController.js';
-
-import ListProductsCart from './controllers/ListProductsCartController.js'
+// import ListProductsCart from './controllers/ListProductsCartController.js'
 
  window.addEventListener("load", function() {
   section(products);
+  menuLateral();
   menuHorinzontal();
-  menuFilter();
 });
 
 window.addEventListener("click", function(event) {
   const option = event.target.id;
-
-  let products = []
 
   let sortProducts = [];
   
@@ -37,10 +34,6 @@ window.addEventListener("click", function(event) {
     case "iconeAlpha": 
       sortProducts = ListProductAlpha(products);
       section(sortProducts)
-      break;
-    case "iconeCart":
-      products = ListProductsCart(order);
-      section(products)
       break;
     case option: 
        AddProductCart(option);
@@ -73,8 +66,8 @@ const section = (allProducts) => {
 })
 }
 
-const menuHorinzontal = () => {
-  document.getElementById('menu-horinzontal').innerHTML +=
+const menuLateral = () => {
+  document.getElementById('menu-lateral').innerHTML +=
   `<div class="item">
     <img src="./assets/img/menu/Logo_Tegrafood.png" id="logo"alt="Logo do restaurante">
   </div>
@@ -88,23 +81,12 @@ const menuHorinzontal = () => {
 </div>`
 }
 
-const menuFilter = () => {
-  document.getElementById('menu-filter').innerHTML +=
-  `<div class="header-menu">
-  <a href="#" class="submenu">Produtos</a>
-  <a href="#" class="submenu">Todos</a>
-  </div>
-  <div class="filter">
-  <div class="dropdown">
-    <div class="dropdown-content">
-      <button class="btn-price btn-entrar" id="firstFilter">R$ 5 à R$25</button>
-      <button class="btn-price btn-entrar" id="secondFilter">R$ 26 à R$45</button>
-      <button class="btn-price btn-entrar" id="thirdFilter">R$ 46 ou mais</button>
-    </div>
-    <img src="./assets/img/menu/filter_alt.png" id="iconeFilter" alt=""></img>
-  </div>
-  <img src="./assets/img/menu/sort_by_alpha.png" id="iconeAlpha" alt="">
-  </div>`
+const menuHorinzontal = () => {
+  document.getElementById('menu-horinzontal').innerHTML += `
+    <img src="./assets/img/menu/shopping_cart.png" id="iconeCart" alt="Carrinho de compra">
+    <img src="./assets/img/menu/notifications.png" id="iconeNotification" alt="Notificação">
+    <img src="./assets/img/menu/Perfil.png" id="iconePerfil"alt="Imagem do perfil">
+  `
 }
 
 
