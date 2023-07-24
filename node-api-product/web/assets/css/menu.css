@@ -31,14 +31,6 @@ section .menuFilter {
   text-decoration-color: var(--colorOrange)
 }
 
-section form {
-  margin: 1vh 1vw 0 22vw;
-}
-
-section .header-menu {
-  margin: 1vh 1vw 0 22vw;
-}
-
 button {
   cursor: pointer;
 }
@@ -116,14 +108,6 @@ header{
 
   #iconePerfil {
     width: 30px;
-  }
-
-  section form {
-    margin: 1vh 1vw 1vw 1vw;
-  }
-
-  section .header-menu {
-    margin-lft: -5%;
   }
 
 }

@@ -1,0 +1,33 @@
+:root {
+  --colorBlue: #223263;
+  --colorOrange: #dc9000;
+}
+#iconeDelete {
+  height: 3%;
+  margin-top: 2%;
+  position: absolute;
+  width: 1%;
+  right: 3%;
+}
+
+#header-title {
+  color: var(--colorBlue);
+  margin: 3%;
+  font-family: "Poppins", "Arial";
+}
+
+select {
+  border-radius: 3px;
+  border:  1 solid var(--colorOrange);
+  background-color: var(--colorOrange);
+  color: var(--colorWhite);
+  padding: 1.5vh 0.5vw 1.5vh 0vw;
+}
+
+
+@media (min-width: 360px) and (max-width: 900px) {
+  #iconeDelete {
+    height: 2%;
+    width: 2%;
+  }
+}

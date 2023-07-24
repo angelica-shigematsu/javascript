@@ -1,0 +1,14 @@
+section .header-menu, section form {
+  margin: 1vh 1vw 0 22vw;
+}
+
+.card-details {
+  right: 3%;
+  position: absolute;
+}
+
+@media (min-width: 360px) and (max-width: 900px) {
+  section  {
+    margin-left: -20%;
+  }
+}
