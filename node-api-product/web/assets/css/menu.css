@@ -42,17 +42,26 @@ button {
 
 header {
   display: flex;
+  background-color: var(--colorOrange);
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  height: 8vh;
 }
 #iconeCart, #iconeNotification, #iconePerfil {
   margin: 1%;
 }
 
 #iconeCart, #iconeNotification {
+  height: 70%;
+}
+
+#iconeNotification {
   height: 40%;
 }
 
 #iconePerfil {
-  height: 60%;
+  height: 70%;
 }
 
 #logo {
@@ -77,15 +86,6 @@ nav {
   flex-direction: column;
   position: absolute;
   top: -10px;
-}
-
-header{
-  display: flex;
-  background-color: var(--colorOrange);
-  flex-direction: row;
-  justify-content: flex-end;
-  position: relative;
-  height: 6%;
 }
 
 @media (min-width: 360px) and (max-width: 900px) {

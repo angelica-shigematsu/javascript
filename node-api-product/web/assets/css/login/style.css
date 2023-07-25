@@ -51,15 +51,13 @@ a {
   margin: 6% 0 0 15%;
 }
 
-.item {
-  margin: 6%;
-}
-
 input {
-  border: 1px solid var(--border);
-  padding: 3%;
   width: 20vw;
   height: 5vh;
+}
+
+.item {
+  margin: 6%;
 }
 
 .input-group {

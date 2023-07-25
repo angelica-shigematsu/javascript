@@ -1,0 +1,10 @@
+:root {
+  --border: #ebf0ff;
+}
+
+input {
+  border: 1px solid var(--border);
+  padding: 3%;
+  width: 20vw;
+  height: 3vh;
+}

@@ -1,0 +1,71 @@
+: root {
+  --border: #ebf0ff;
+  --colorBlack: #000;
+}
+section form {
+  margin: 2vh 8vw 0 2vw;
+}
+
+.card-details {
+  right: 12%;
+  position: absolute;
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: row;
+  margin: 2vh 8vw 0 2vw;
+}
+
+.card-cupom {
+  margin-right: 2vw;
+  width: 60vw;
+  height: 15vh;
+}
+
+.card-total {
+  text-align: left;
+}
+
+.card-value {
+  text-align: right;
+}
+
+.card-total, .card-value {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.flex-button {
+  margin-top: 2%;
+  right: 45%;
+  position: absolute;
+}
+
+#input-cupom {
+  margin: 4vh 0 0 4vw;
+  border-radius: 3%;
+  box-shadow: 3px 3px 4px #888888;
+  height: 3vh;
+}
+
+.link-calculate-frete {
+  color: var(--colorBack);
+  text-decoration: underline;
+}
+
+.price-total {
+  color: var(--colorBlue);
+  font-weight: bold;
+}
+
+.text-cupom {
+  margin-left: 3%;
+  display: flex;
+  align-items: center;
+}
+
+select {
+  margin-left: 40%;
+}

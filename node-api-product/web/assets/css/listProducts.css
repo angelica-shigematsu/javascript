@@ -51,13 +51,20 @@ h2, .price {
   font-weight: bold;
 }
 
-section form{
+section form, .card-cupom {
   box-shadow: 5px 5px 8px #888888;
-  border-radius: 5px;
-  border: 1px solid var(--colorGray);
   display: flex;
   padding: 0.5%;
   flex-direction: row;
+}
+
+section form, .card-cupom, .card-product-total{
+  border-radius: 5px;
+  border: 1px solid var(--colorGray);
+}
+
+.card-product-total {
+  padding: 5%;
 }
 
 @media (min-width: 360px) and (max-width: 900px) {

@@ -1,11 +1,10 @@
-import { products, order }  from './mockProducts.js';
+import { products }  from './mockProducts.js';
 import { ListProductAlpha, 
           ListByPrice5To25,
           ListByPrice26To45,
           ListByPrice46ToMore
          } from './controllers/ListProductController.js';
 import { AddProductCart } from './controllers/AddProductCartController.js';
-// import ListProductsCart from './controllers/ListProductsCartController.js'
 
  window.addEventListener("load", function() {
   section(products);
@@ -36,14 +35,14 @@ window.addEventListener("click", function(event) {
       section(sortProducts)
       break;
     case option: 
-       AddProductCart(option);
+      AddProductCart(option);
        break;
   }
   sortProducts = []
 });
 
 const section = (allProducts) => {
-  document.getElementById('product').innerHTML = null;
+  document.getElementById('product').innerHTML = "";
 
   allProducts.forEach((product)=> {
     document.getElementById('product').innerHTML +=
@@ -83,13 +82,13 @@ const menuLateral = () => {
 
 const menuHorinzontal = () => {
   document.getElementById('menu-horinzontal').innerHTML += `
-    <img src="./assets/img/menu/shopping_cart.png" id="iconeCart" alt="Carrinho de compra">
+    <a href="cart.html" id="iconeCart"><img src="./assets/img/menu/shopping_cart.png"  id="iconeCart" alt="Carrinho de compra"></a>
     <img src="./assets/img/menu/notifications.png" id="iconeNotification" alt="Notificação">
     <img src="./assets/img/menu/Perfil.png" id="iconePerfil"alt="Imagem do perfil">
   `
 }
 
-
+export { menuHorinzontal }
 
 
 
