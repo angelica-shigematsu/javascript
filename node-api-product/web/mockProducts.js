@@ -3,7 +3,7 @@ const products = [
     id: 1,
     name: "Torta de Leite Ninho",
     description: "Massa de Baunilha; Creme de ninho Tradicional; Morango; Chantilly",
-    type: "torta",
+    type: "Torta",
     price: 20.60,
     photo: './assets/img/products/torta.png'
   },
@@ -11,7 +11,7 @@ const products = [
     id: 2,
     name: "Pizza Marguerita",
     description: "Muçarela, tomate, majericão , orégano",
-    type: "pizza",
+    type: "Pizza",
     price: 50.60,
     photo: './assets/img/products/pizza.png'
   },

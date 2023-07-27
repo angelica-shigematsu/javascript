@@ -2,7 +2,11 @@ import { products }  from './mockProducts.js';
 import { ListProductAlpha, 
           ListByPrice5To25,
           ListByPrice26To45,
-          ListByPrice46ToMore
+          ListByPrice46ToMore,
+          FilterByDrink,
+          FilterByPizza,
+          FilterByPastel,
+          FilterByAcai
          } from './controllers/ListProductController.js';
 import { AddProductCart } from './controllers/AddProductCartController.js';
 
@@ -11,7 +15,35 @@ import { AddProductCart } from './controllers/AddProductCartController.js';
   menuLateral();
   menuHorinzontal();
 });
+let filter = products;
+//menu laterial
+window.addEventListener("click", function(event) {
+  const optionMenu = event.target.childNodes[0].data;
 
+  switch (optionMenu) {
+    case "Todos":
+      section(products)
+      break;
+    case "Pizza": 
+      filter = FilterByPizza(products)
+      section(filter)
+      break;
+    case "Pastel": 
+      filter = FilterByPastel(products)
+      section(filter)
+      break;
+    case "Açaí": 
+      filter = FilterByAcai(products)
+      section(filter)
+      break;
+    case "Bebidas": 
+      filter = FilterByDrink(products)
+      section(filter)
+      break;
+  }
+});
+
+//menu com filtro de preço e alfabético
 window.addEventListener("click", function(event) {
   const option = event.target.id;
 
@@ -19,19 +51,19 @@ window.addEventListener("click", function(event) {
   
   switch (option) {
     case "firstFilter":
-      sortProducts = ListByPrice5To25(products)
+      sortProducts = ListByPrice5To25(filter)
       section(sortProducts)
       break;
     case "secondFilter":
-      sortProducts = ListByPrice26To45(products)
+      sortProducts = ListByPrice26To45(filter)
       section(sortProducts)
       break;
     case "thirdFilter":
-        sortProducts = ListByPrice46ToMore(products)
+        sortProducts = ListByPrice46ToMore(filter)
         section(sortProducts)
         break;
     case "iconeAlpha": 
-      sortProducts = ListProductAlpha(products);
+      sortProducts = ListProductAlpha(filter);
       section(sortProducts)
       break;
     case option: 
