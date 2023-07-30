@@ -23,12 +23,8 @@ section form {
   height: 15vh;
 }
 
-.card-total {
+.card-total, .card-value{
   text-align: left;
-}
-
-.card-value {
-  text-align: right;
 }
 
 .card-total, .card-value {
@@ -67,5 +63,65 @@ section form {
 }
 
 select {
-  margin-left: 40%;
-}
+  margin-left: 35%;
+} 
+
+@media (min-width: 360px) and (max-width: 900px) {
+  * {
+    font-size: 1em;
+  }
+
+  section form {
+    margin: 2vh 2vw 0 2vw;
+  }
+
+  .btn-add {
+    font-size: 1em;
+    margin: 0.2vh 6vw;
+    padding: 9%;
+  }
+
+  .card-details {
+    right: 5%;
+    position: absolute;
+  }
+
+  .card-cupom {
+    margin-right: -20vw;
+    width: 94vw;
+    height: 6vh;
+  }
+
+  .card-product-total {
+    font-size: 0.6em;
+  }
+
+  .card-total {
+    margin: 0.5vh 0 0 60vw;
+  }
+
+  .card-value {
+    position: absolute;
+    margin: 7vh 0 0 78vw;
+  }
+
+  .description {
+    white-space: wrap;
+    font-size: 0.6em;
+  }
+
+  .flex-button {
+    margin-top: 2%;
+    right: 4%;
+    position: absolute;
+    font-size: 0.6em;
+  }
+
+  #input-cupom {
+    margin-top: 1vh;
+    border-radius: 3%;
+    box-shadow: 3px 3px 4px #888888;
+    height: 2vh;
+    width: 50%;
+  } 
+} 

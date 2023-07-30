@@ -24,10 +24,23 @@ select {
   padding: 1.5vh 0.5vw 1.5vh 0vw;
 }
 
-
 @media (min-width: 360px) and (max-width: 900px) {
-  #iconeDelete {
-    height: 2%;
-    width: 2%;
+
+  .card-bottom {
+    display: flex;
+    flex-direction: column;
   }
-}
+
+  #iconeDelete {
+   visibility: hidden;
+  }
+
+  .card-details {
+    font-size: 0.5em;
+    right: 5%;
+    position: absolute;
+  }
+  select {
+    padding: 0.6vh 0vw 0.6vh 0vw;
+  }
+} 

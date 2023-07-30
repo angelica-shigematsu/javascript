@@ -69,10 +69,25 @@ section form, .card-cupom, .card-product-total{
 
 @media (min-width: 360px) and (max-width: 900px) {
   * {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
   nav {
     visibility: hidden;
+   } 
+   
+  button {
+    padding: 3%;
+  }
+  
+  .card-details {
+    text-align: center;
+    margin-top: 1vh;
+    width: 10%;
+    height: 10%;
+  }
+
+  .card-title {
+    margin-top: 1vh;
   }
 
   #imgProduct {
@@ -84,12 +99,12 @@ section form, .card-cupom, .card-product-total{
   .btn {
     height: 20%;
     width: 100%;
+    padding: 3%;
   } 
 
   .price {
     font-size: 0.7em;
     font-weight: bold;
-  }
-
+  } 
 }
 
