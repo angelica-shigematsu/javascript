@@ -1,0 +1,28 @@
+@media (min-width: 360px) and (max-width: 900px) {
+  * {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+  }
+  .card-login {
+    margin: 10vh 0 5vh 0;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+  }
+  .img-login {
+    visibility: hidden;
+    margin-left: -30%;
+  }
+  .btn {
+    width: 110%;
+    margin: 0 -4% 0 -4%;
+  }
+  .form-control {
+    width: 100%;
+  }
+
+  .input-group {
+    margin-left: -2%;
+  }
+}
